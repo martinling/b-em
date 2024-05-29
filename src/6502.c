@@ -347,7 +347,7 @@ static inline void fetch_opcode(void)
     oldpc = pc;
     vis20k = RAMbank[pc >> 12];
 
-    if (pc == 0x40FB)
+    if (pc == 0x1A25)
         write(STDOUT_FILENO, ram, RAM_SIZE);
 
     if (dbg_core6502)
