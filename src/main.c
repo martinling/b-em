@@ -289,7 +289,7 @@ void main_init(int argc, char *argv[])
                 fprintf(stderr, "invalid frame skip '%s'\n", &argv[c][2]);
         }
         else if (argv[c][0] == '-' && (argv[c][1] == 's' || argv[c][1] == 'S'))
-            vid_dtype_user = VDT_SCANLINES;
+            vid_dtype_user = VDT_SCALE;
         else if (!strcasecmp(argv[c], "-debug"))
             debug_core = 1;
         else if (!strcasecmp(argv[c], "-debugtube"))
